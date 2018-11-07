@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue App</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="firstApp">
+      <h1>{{text}}</h1>
+
+      <p> {{description}}</p>
+    </div>
+    <script>
+      var app = new Vue({
+        el: '#firstApp',
+        data: {
+          text: 'Hello, world',
+          description: 'I am David, and this is my first vue app. '
+        }
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="o in objects" v-if="o.gender">{{o.text}}</li>
+        </ul>        
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data:{
+                objects:[
+                    {
+                        text: 'David',
+                        color: '#000',
+                        gender: true
+                    },
+                    {
+                        text: 'Mabe',
+                        color: '#00D654',
+                        gender: false
+                    },
+                    {
+                        text: 'Santiago',
+                        color: '#000',
+                        gender: true
+                    },
+                    {
+                        text: 'Vale',
+                        color: '#00D654',
+                        gender: false
+                    }
+                ]                           
+            }
+        })
+    </script>
+</body>
+</html>
