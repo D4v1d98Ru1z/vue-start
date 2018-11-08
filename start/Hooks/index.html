@@ -18,9 +18,14 @@
             data:{
                 count: 0
             },
+            methods:{
+                upnumb(){
+                    this.count++
+                }
+            }
             //hook
             updated(){
-                console.log('Hook update: ', )
+                console.log('Hook update: ', this.count)
             }
         })
     </script>
