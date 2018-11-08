@@ -8,12 +8,16 @@
     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-    <div id="app">        
+    <div id="app">     
+        <h1>Hey welcome to models Vue app</h1>
+        <span>Enter your name</span>
+        <input type="text" v-model="name">   
     </div>
     <script>
         var app = new Vue({
             el: '#app',
             data:{
+                name: ''
             }
         })
     </script>
