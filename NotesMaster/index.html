@@ -27,10 +27,10 @@
             <button type="button" class="btn btn-primary btn-lg" @click="addMemos">Submit</button>
         </form>
         <div class="col-sm-12">
-            <div class="col-sm-4" v-for="note in content">
+            <div class="col-sm-4" v-for="(note, index) in content">
                 <div class="card m-4" style="width: 18rem;">
                     <div class="card-body">
-                        <button class="close" >&times;</button>
+                        <button class="close" @click="removeMemos(index)">&times;</button>
                         <h5 class="card-title">{{note.title}}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{note.date}}</h6>
                         <p class="card-text">{{note.message}}</p>
