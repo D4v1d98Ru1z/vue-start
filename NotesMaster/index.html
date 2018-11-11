@@ -15,15 +15,16 @@
     <div id="vue" class="container mt-5">
         <h2>{{title}}</h2>
         <form>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">{{nTitle}}</label>
-                  <input v-model="notes.title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example: Fix the issue">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">{{nText}}</label>
-                  <textarea v-model="notes.message" placeholder="Type a fancy note here..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-              </form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">{{nTitle}}</label>
+                <input v-model="notes.title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example: Fix the issue">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">{{nText}}</label>
+                <textarea v-model="notes.message" placeholder="Type a fancy note here..." class="form-control" id="exampleFormControlTextarea1"
+                    rows="3"></textarea>
+            </div>
+        </form>
     </div>
     <script>
         var vue = new Vue({
@@ -36,7 +37,18 @@
                 notes: {
                     title: '',
                     message: ''
-                }
+                },
+                //array
+                //Tutorial array
+                content: [
+                    {
+                        title: 'Welcome to NotesMaster',
+                        message: 'Here you can save your notes and memos',
+                        date: new Date(Date.now()).toLocaleString()
+
+                    }
+                ]
+
             }
         })
     </script>
