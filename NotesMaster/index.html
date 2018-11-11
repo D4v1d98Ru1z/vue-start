@@ -24,6 +24,7 @@
                 <textarea v-model="notes.message" placeholder="Type a fancy note here..." class="form-control" id="exampleFormControlTextarea1"
                     rows="3"></textarea>
             </div>
+            <button type="button" class="btn btn-primary btn-lg" @click="addMemos" >Submit</button>
         </form>
     </div>
     <script>
@@ -49,6 +50,16 @@
                     }
                 ]
 
+            },
+            methods: {
+                addMemos(){
+                    let {title, message} = this.notes
+                    this.content.push({
+                        title,
+                        message,
+                        date: new Date(Date.now()).toLocaleString()
+                    })
+                }
             }
         })
     </script>
