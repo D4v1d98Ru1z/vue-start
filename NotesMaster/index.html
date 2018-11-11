@@ -13,15 +13,15 @@
 
 <body>
     <div id="vue" class="container mt-5">
-        <h2>NotesMaster</h2>
+        <h2>{{title}}</h2>
         <form>
                 <div class="form-group">
-                  <label for="exampleFormControlInput1">Note title</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example: Fix the issue">
+                  <label for="exampleFormControlInput1">{{nTitle}}</label>
+                  <input v-model="notes.title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example: Fix the issue">
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Memo</label>
-                  <textarea placeholder="Type a fancy note here..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <label for="exampleFormControlTextarea1">{{nText}}</label>
+                  <textarea v-model="notes.message" placeholder="Type a fancy note here..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
               </form>
     </div>
@@ -29,7 +29,14 @@
         var vue = new Vue({
             el: '#vue',
             data: {
-
+                title: 'NoteMaster',
+                nTitle: 'Note title',
+                nText: 'Memo',
+                //model
+                notes: {
+                    title: '',
+                    message: ''
+                }
             }
         })
     </script>
