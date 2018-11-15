@@ -3,8 +3,9 @@
         <div class="container mt-5">
             <h2>{{title}}</h2>    
             <p>{{description}}</p>   
-            <Character/>
-            
+            <div class="col-md-12">
+                <Character :id="id"/>
+            </div>
         </div>
     </div>
 </template>
@@ -18,6 +19,7 @@
             return {
                 title: 'Welcome to Starbase!',
                 description: 'Here you can find all information about your favorite star wars characters.'
+                best_characters: [1, 13, 14] 
             }
         },
         components: {

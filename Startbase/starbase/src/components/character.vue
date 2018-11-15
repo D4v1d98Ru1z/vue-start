@@ -12,7 +12,7 @@
             }
         },
         methods:{
-            fetchCharacter(){
+            fetchCharacter(id){
                 // Fetch the data from API
                 fetch(`https://swapi.co/api/people/${id}`, {
                     method: 'GET'
@@ -22,7 +22,7 @@
         },
         //created hook
         created(){
-            this.fetchCharacter()
+            this.fetchCharacter(this.id)
         }
 
     }
