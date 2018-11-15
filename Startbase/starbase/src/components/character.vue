@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-4 m-4">
+  <div class="col-md-4 mb-3">
     <div class="card card-bord">
       <div class="card-body">
         <h5 class="card-title">{{character.name}}</h5>
