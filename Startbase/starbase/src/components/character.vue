@@ -1,5 +1,5 @@
 <template>
-<button type="button" class="btn btn-success">Change Character</button>
+    <button @click="switchCharacter" type="button" class="btn btn-success">Change Character</button>
     <div>
         {{character}}
     </div>   
@@ -19,6 +19,11 @@
                     method: 'GET'
                     //create a promise to respose the data from API
                 }).then(response => response.json()).then(json => this.character = json)
+            },
+            //Show random character 
+            switchCharacter(){
+                let radom_char = Math.floor(Math.random()*83)+1
+                fetchCharacter(radom_char)
             }
         },
         //created hook
