@@ -1,4 +1,5 @@
 <template>
+<button type="button" class="btn btn-success">Change Character</button>
     <div>
         {{character}}
     </div>   
