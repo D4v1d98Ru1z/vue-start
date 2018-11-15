@@ -1,6 +1,6 @@
 <template>
-    <button @click="switchCharacter" type="button" class="btn btn-success">Change Character</button>
-    <div>
+    <div >
+        <button @click="switchCharacter" type="button" class="btn btn-success">Change Character</button>
         {{character}}
     </div>   
 </template>
@@ -23,7 +23,7 @@
             //Show random character 
             switchCharacter(){
                 let radom_char = Math.floor(Math.random()*83)+1
-                fetchCharacter(radom_char)
+                this.fetchCharacter(radom_char)
             }
         },
         //created hook
