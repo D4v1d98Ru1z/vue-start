@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-4">
+  <div class="col-md-4 m-4">
     <div class="card card-bord">
       <div class="card-body">
         <h5 class="card-title">{{character.name}}</h5>
@@ -9,7 +9,6 @@
         <button @click="switchCharacter" type="button" class="btn btn-success">Change Character</button>
       </div>
     </div>
-    {{character}}
   </div>
 </template>
 <script>
