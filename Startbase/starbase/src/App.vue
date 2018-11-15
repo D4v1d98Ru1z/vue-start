@@ -3,7 +3,7 @@
         <div class="container mt-5">
             <h2>{{title}}</h2>    
             <p>{{description}}</p>   
-            <div class="col-md-12 ">
+            <div class="row d-flex">
                 <Character v-for="(id, index) in best_characters" :id="id" key="index"/>
             </div>
         </div>
@@ -19,7 +19,7 @@
             return {
                 title: 'Welcome to Starbase!',
                 description: 'Here you can find all information about your favorite star wars characters.',
-                best_characters: [1, 13, 14, 20] 
+                best_characters: [1, 13, 20] 
             }
         },
         components: {
