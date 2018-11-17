@@ -1,4 +1,8 @@
 <template>
-    <div class="">
+    <div class="app">
+    Hey
     </div>
 </template>
+<script>
+    
+</script>
