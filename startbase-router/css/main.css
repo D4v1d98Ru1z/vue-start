@@ -1,0 +1,15 @@
+body {
+  background-color: #263238;
+}
+
+body #app {
+  color: #fff;
+  text-align: center;
+}
+
+body .card-bord {
+  border: 2px solid #4fc08d !important;
+  background-color: transparent !important;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=main.css.map */
