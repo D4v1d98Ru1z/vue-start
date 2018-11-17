@@ -1,8 +1,15 @@
 <template>
     <div class="app">
-    Hey
+        {{welcome}}
     </div>
 </template>
 <script>
-    
+    export default {
+        name: 'app',
+        data(){
+            return{
+                welcome: 'Hello everyone!'
+            }
+        }        
+    }
 </script>
