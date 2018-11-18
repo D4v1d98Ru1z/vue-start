@@ -9,6 +9,15 @@
             return{
                 type: this.$route.params.type
             }
+        },
+        //watch propety
+        watch:{
+            '$route': 'change'
+        },
+        methods: {
+            change(){
+                this.type = this.$route.params.type
+            }
         }
     }
 </script>
