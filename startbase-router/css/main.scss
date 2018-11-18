@@ -3,10 +3,20 @@ body{
     #app{
         color: #fff;
         text-align: center;
+        h4{
+            .link{
+                color: #4fc08d;
+                text-decoration: none;
+                &:hover{
+                    color: #215e42;
+                }
+            }
+        }
     }
     .card-bord{
         border: 2px solid #4fc08d !important;
         background-color: transparent !important;
         border-radius: 5px;
     }
+    
 }

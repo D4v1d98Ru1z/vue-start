@@ -7,6 +7,15 @@ body #app {
   text-align: center;
 }
 
+body #app h4 .link {
+  color: #4fc08d;
+  text-decoration: none;
+}
+
+body #app h4 .link:hover {
+  color: #215e42;
+}
+
 body .card-bord {
   border: 2px solid #4fc08d !important;
   background-color: transparent !important;
