@@ -1,6 +1,6 @@
 <template>
-    <div>
-        Type: {{items}}
+    <div class="col-md-12">
+        {{items}}
     </div>  
 </template>
 <script>
