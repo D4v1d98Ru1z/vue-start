@@ -1,5 +1,11 @@
 <template>
     <div class="row d-flex">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" :placeholder="'Enter the number of your favorite '+ this.type" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+            </div>
+        </div>
         <Item v-for="(item, index) in items" key="index" :passed-item="item" :type="type" />
     </div>  
 </template>
