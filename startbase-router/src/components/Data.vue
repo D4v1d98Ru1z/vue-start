@@ -1,6 +1,6 @@
 <template>
     <div class="row d-flex">
-        <Item v-for="(item, index) in items" key="index" :item="item" />
+        <Item v-for="(item, index) in items" key="index" :item="item" :type="type" />
     </div>  
 </template>
 <script>
